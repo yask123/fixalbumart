@@ -25,3 +25,7 @@ Go to the directory containing `mp3` files.
 >> Fixed all songs
 ```
 
+### Requirements
+1. Python 2.7
+2. pip
+3. eyed3
