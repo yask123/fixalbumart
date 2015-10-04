@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='fixalbumart',
-      version='1.0',
+      version='1.8',
       description='Automagically fix album arts of mp3 files, Even with incorrect tags!!!',
       url='https://github.com/yask123/AlbumArt-Grabber',
       author='Yask Srivastava',
