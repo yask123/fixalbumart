@@ -1,0 +1,9 @@
+setup.py
+bin/fixalbumart
+fixalbumart/__init__.py
+fixalbumart.egg-info/PKG-INFO
+fixalbumart.egg-info/SOURCES.txt
+fixalbumart.egg-info/dependency_links.txt
+fixalbumart.egg-info/not-zip-safe
+fixalbumart.egg-info/requires.txt
+fixalbumart.egg-info/top_level.txt
