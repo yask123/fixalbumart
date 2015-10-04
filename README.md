@@ -13,10 +13,11 @@ For Python 2.7
 ## Usage
 Go to the directory containing `mp3` files.
 
-```❯cd MyMusic
+``` zsh
+❯cd MyMusic
 
-❯fixalbumart ```
-```zsh
+❯fixalbumart
+
 >> Fixing taylor swift - love story
 >> In the end - Linkin par 
 ......
