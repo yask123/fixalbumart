@@ -39,6 +39,7 @@ for name in song_name:
         str = unicode(str, errors='replace')
         name = str.encode('utf8')
         print ('Fixing '+name)
+        eyed3.log.setLevel("ERROR")
         audiofile = eyed3.load((name))
         if audiofile.tag is None:
             audiofile.tag = eyed3.id3.Tag()
