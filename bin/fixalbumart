@@ -1,10 +1,20 @@
 #!/usr/bin/env python
 
-import urllib2,cookielib
-from urllib import quote_plus as qp
-import urllib
 import os
+import sys
+
+if sys.version_info.major is 3:
+    import http.cookiejar as cookielib
+    import urllib.request as urllib2
+    from urllib.parse import quote_plus as qp
+else:
+    import cookielib
+    import urllib2
+    from urllib import quote_plus as qp
+    import urllib
+
 import eyed3
+
 def grab(search=''):
     search = qp(search)
     site = "https://www.google.com/search?site=&tbm=isch&source=hp&biw=1112&bih=613&q="+search+"&oq=backst&gs_l=img.3.0.0l10.1011.3209.0.4292.8.7.1.0.0.0.246.770.0j3j1.4.0..3..0...1.1.64.img..3.5.772.KyXkrVfTLT4#tbm=isch&q=back+street+boys+I+want+it+that+way"
@@ -28,7 +38,6 @@ def grab(search=''):
     return content[start:end+3]
 
 import glob
-import urllib2
 
 song_name= glob.glob("*.mp3")
 for name in song_name:
