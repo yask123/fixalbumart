@@ -34,7 +34,7 @@ song_name= glob.glob("*.mp3")
 for name in song_name:
     try:
         search =  name[:-4]
-        image_link= grab(search)    
+        image_link= grab(search)
         str = name
         str = unicode(str, errors='replace')
         name = str.encode('utf8')
@@ -50,4 +50,4 @@ for name in song_name:
         audiofile.tag.images.set(0,imagedata,"image/jpeg",u"Album Art")
         audiofile.tag.save()
     except:
-        continue 
+        continue
